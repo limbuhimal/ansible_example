@@ -18,11 +18,11 @@ You can also have inventory file at the root folder.
 
 Example:
 
-----root/---->baseSetup.yaml
-..............inventory/---->prod/
-..............---->inventory.yaml (this inventory file is for prod environment)
-...................prodInventory.yaml(or you can directly have inventory file like this in root folder)
-..............roles/
-....................---->commonsetup/
-....................---->setTime/
+----root/---->	baseSetup.yaml
+	 ---->	inventory/	---->prod/
+	 				---->	inventory.yaml (this inventory file is for prod environment)
+	 ---->	prodInventory.yaml(or you can directly have inventory file like this in root folder)
+	 ---->	roles/
+			---->commonsetup/
+			---->setTime/
                 
