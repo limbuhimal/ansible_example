@@ -1,0 +1,9 @@
+---
+- hosts: tomcat
+  become: yes
+  roles:
+    - { role: log-rotate, app_list: "{{ applist }}" }
+  vars:
+    applist:
+     - httpd
+     - jenkins
