@@ -22,8 +22,7 @@ Example:
 
 	 ---->	inventory/	
                            ---->prod/
-
-	 				---->	inventory.yaml (this inventory file is for prod environment)
+					---->	inventory.yaml (this inventory file is for prod environment)
 
 	 ---->	prodInventory.yaml(or you can directly have inventory file like this in root folder)
 
