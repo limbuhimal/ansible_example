@@ -18,6 +18,7 @@ You can also have inventory file at the root folder.
 
 Example:
 
+
 ----root/
 
 	 ---->	baseSetup.yaml
@@ -32,4 +33,11 @@ Example:
 
 			---->commonsetup/
 			---->setTime/
-                
+
+
+important terms:
+	handlers: runs when called by another task. 
+	files: any files that are required by the playbook are placed in this directory   
+	meta: contains dependencies
+	tasks: all the task for the playbook are placed here
+	vars: defines variables that are passed in tasks.              
