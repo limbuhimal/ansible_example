@@ -2,8 +2,11 @@
 - hosts: tomcat
   become: yes
   roles:
-    - { role: log-rotate, app_list: "{{ applist }}" }
+    - { role: log-rotate, app_list: "{{ applist }}" } 
   vars:
     applist:
      - httpd
      - jenkins
+# we are using variables here. this playbook runs on tomcat 
+# server and setup logrotate in listed apps only. 
+# instead of writing same code for all the apps, we are using variable.
