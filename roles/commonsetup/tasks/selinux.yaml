@@ -1,0 +1,4 @@
+- name: changing SElinux setting
+  selinux: 
+     policy: targeted 
+     state: permissive

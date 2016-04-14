@@ -1,0 +1,14 @@
+#this is incomplete
+- user:
+    name: "{{ item }}"
+    home: /home/{{ item }}
+    state: present
+  with_items:
+    - testuser
+
+- name: adds authentication key for SSH for user created
+  authorized_key:
+    user: eric
+    key: "{{ item }}"
+  with_file:
+   - public_keys/testuser.pub

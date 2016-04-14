@@ -1,0 +1,9 @@
+#this is the most imp file. whatever yaml file you include will be run by ansible and in that order. below i have 
+#commented out adduser yaml file because its incomplete so even if u run this playbook addeuser.yaml file will not run
+#because its commented out.
+- include: resize.yaml
+- include: upgrade.yaml
+- include: iptables.yaml
+- include: selinux.yaml
+- include: root_keys.yaml
+#- include: adduser.yaml

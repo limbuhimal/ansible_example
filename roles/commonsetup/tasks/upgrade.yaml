@@ -1,0 +1,9 @@
+- name: ensure python-selinux is installed before editing selinux setting
+  yum:
+   name: libselinux-python
+   state: installed
+
+- name: upgrades all packages
+  yum:
+    name=* 
+    state=latest

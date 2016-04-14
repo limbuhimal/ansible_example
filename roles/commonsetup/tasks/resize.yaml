@@ -1,0 +1,4 @@
+#you might not need this. it only applies to aws.
+- name: resizes disk space to full capacity
+  shell: "resize2fs /dev/xvde"
+

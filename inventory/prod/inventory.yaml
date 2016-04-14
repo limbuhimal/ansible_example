@@ -1,0 +1,29 @@
+#this is example of how server list are created and grouped for ansible to run.
+tomcat1 ansible_ssh_host=192.168.9.10 ansible_host=192.168.9.10 ansible_hostname=tomcat1 # this means ansible knows by #tomcat1 you mean server who's ipaddress is 192.168.9.10. 
+tomcat2 ansible_ssh_host=192.168.9.11 ansible_host=192.168.9.11 ansible_hostname=tomcat2
+mysql1 ansible_ssh_host=192.168.9.14 ansible_host=192.168.9.14 ansible_hostname=mysql1
+mysql2 ansible_ssh_host=192.168.9.15 ansible_host=192.168.9.15 ansible_hostname=mysql2
+
+#below is the example of groups of hosts.
+
+[tomcat] # so in playbook in hosts u have tomcat...then that playbook will on both of the below tomcat servers. 
+tomcat1
+tomcat2
+
+[mysql]
+mysql1
+mysql2
+
+[texas servers] #mixing servers in groups
+tomcat1
+mysql1
+
+[new york servers]
+tomcat2
+mysql2
+
+[eastside:children] #example of groups of groups
+new york servers
+
+[westside:children]
+texas servers

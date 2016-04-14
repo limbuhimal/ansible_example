@@ -1,0 +1,7 @@
+- name: set iptables to stay off on boot
+  service: 
+     name=iptables 
+     state=stopped
+
+- name: stay off on boot
+  shell: "chkconfig iptables off"

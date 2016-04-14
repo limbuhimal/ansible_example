@@ -1,0 +1,6 @@
+- name: Add authorized_keys for root users
+  authorized_key: 
+      user: root
+      key: "{{ item }}"
+  with_file:  
+      - public_keys/himal-limbu.pub
