@@ -26,7 +26,7 @@ Example:
                            ---->prod/
                                     ---->	inventory.yaml (this inventory file is for prod environment)
 
-	 ---->	prodInventory.yaml(or you can directly have inventory file like this in root folder)
+	 ---->	prodInventory(or you can directly have inventory file like this in root folder)
 
 	 ---->	roles/
 
