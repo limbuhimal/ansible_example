@@ -15,12 +15,14 @@ roles is where u indicate which roles you want the playbook to run.
 for Inventory,
 I have a inventory folder, inside which i have Prod folder and inside that, I have inventory YAML file. 
 You can also have inventory file at the root folder. 
+
 Example:
+
 ----root/---->baseSetup.yaml
-              inventory/---->prod/
-                                  ---->inventory.yaml (this inventory file is for prod environment)
-               prodInventory.yaml(or you can directly have inventory file like this in root folder)
-              roles/
-                    ---->commonsetup/
-                    ---->setTime/
+..............inventory/---->prod/
+..............---->inventory.yaml (this inventory file is for prod environment)
+...................prodInventory.yaml(or you can directly have inventory file like this in root folder)
+..............roles/
+....................---->commonsetup/
+....................---->setTime/
                 
