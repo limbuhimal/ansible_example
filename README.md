@@ -18,7 +18,8 @@ You can also have inventory file at the root folder.
 
 Example:
 
-----root/---->	baseSetup.yaml
+----root/
+	 ---->	baseSetup.yaml
 
 	 ---->	inventory/	
                            ---->prod/
