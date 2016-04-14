@@ -1,7 +1,0 @@
----
-- hosts: all # all means all servers
-  gather_facts: yes # not needed much but this collects facts abt servers
-  become: yes  # this means become root
-  roles: # when u run this playbook it goes into roles folder and runs listed roles.
-     - setTime #this will set the time zone to New York time for the servers. 
-     - commonsetup #just few examples

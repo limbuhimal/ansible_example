@@ -1,0 +1,6 @@
+---
+- hosts: tomcat
+  gather_facts: no
+  become: yes
+  roles:
+    - { role: commonsetup, when: 'ansible_os_family == 'CentOS' } # this will only run if the OS is CentOS in tomcat #server
