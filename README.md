@@ -1,11 +1,12 @@
 this is the simple example of use case of ansible.
-it doesnt cover all the area of ansible like meta, vars, templates, etc.
-Although, if you run this playbook with correct inventory, it will run with success. 
+it doesnt cover all the area of ansible like meta, vars, templates, etc but will eventually.
+you can run this playbook with success with just some minor changes. 
 
 Ansible can be seen as filesystem in unix. 
 
-Inside the main folder (like root folder in unix): lets call this root folder too, is where all the playbooks are. 
-here, basesetup.yaml is my playbook. if you view this playbook u will see what the basic setup of 
+Inside the main folder (like root folder in unix filesystem): lets call this root folder in our case too, is where all the playbooks are. 
+
+Here, I have created playbooks. if you view thesse playbooks u will see how the basic setup of 
 playbook looks like.
 
 In Playbook, YAML file:
