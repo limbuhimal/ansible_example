@@ -1,0 +1,3 @@
+- include: copyLogrotate.yaml
+- include: crontab.yaml
+- include: serviceLogrotate.yaml

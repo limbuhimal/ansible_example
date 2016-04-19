@@ -1,0 +1,10 @@
+---
+#This copies logrotation for any service. DO NOT forget to edit serviceLog  as per service.
+- name: copy log-rotate file for services
+  template:
+    src: serviceLog.j2
+    dest: /etc/logrotate.d/serviceLog
+    owner: root
+    group: root
+    mode: 0644
+

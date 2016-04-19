@@ -1,0 +1,12 @@
+#This sets the configuration for log rotation.  
+#as per service and location of their log files respectively.
+#here, jinja is being used. 
+# variable "app" will be replaced with app_list names.
+{% for app  in app_list %}
+/var/log/{{ app }}/*.log {
+    copytruncate
+    compress
+    notifempty
+    missingok
+ }
+{% endfor %}

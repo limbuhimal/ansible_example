@@ -1,0 +1,9 @@
+--- 
+- name: add crontab for logrotate
+  lineinfile:
+     dest: /etc/crontab
+     line: "{{ item.line }}"
+     state: present
+     create: yes
+  with_items:
+     - { line: '0 21 * * 6 root /usr/sbin/logrotate /etc/logrotate.conf > /dev/null2>&1' }
