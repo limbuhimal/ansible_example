@@ -1,0 +1,7 @@
+- name: copy python file
+  copy:
+    src: "pythonScript.py"
+    dest: "/opt/"
+  
+- name: execute script
+  command: "/opt/pythonScript.py"

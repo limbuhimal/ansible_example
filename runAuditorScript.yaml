@@ -1,0 +1,7 @@
+---
+- hosts: DC Config Stations
+  gather_facts: yes
+  become: yes
+  roles:
+    - pythonScript
+
